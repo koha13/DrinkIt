@@ -1,0 +1,14 @@
+{
+  "name": "DrinkIt",
+  "description": "Drink water reminder",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "notifications"],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "manifest_version": 2
+}

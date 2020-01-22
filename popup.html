@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DrinkIt</title>
+    <style>
+      body {
+        width: 250px;
+        text-align: center;
+      }
+      button {
+        border: none;
+        background: rgb(37, 142, 241);
+        border-radius: 10px;
+        padding: 5px 5px;
+        width: 100px;
+        cursor: pointer;
+        box-shadow: 0px 3px black;
+        color: aliceblue;
+      }
+      .bt-container {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+      }
+      .input-container {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        font-weight: 900;
+      }
+      input {
+        /* border-radius: 15px; */
+        border: none;
+        border-bottom: 1px solid black;
+        width: 100px;
+        font-weight: 600;
+        text-align: center;
+      }
+      input:focus {
+        outline-width: 0;
+      }
+      .la {
+        display: inline;
+        right: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0;
+        margin: 0;
+      }
+      button:focus {
+        outline-width: 0;
+      }
+      button:active {
+        box-shadow: none;
+        transform: translateY(5px);
+      }
+      .status {
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: 600;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Remind me every:</h2>
+    <div class="input-container">
+      <input type="number" id="in" />
+      <p class="la">minutes</p>
+    </div>
+    <p class="status" id="status">Off</p>
+    <p id="time"></p>
+    <div class="bt-container">
+      <button type="button" id="hen">Remind me!</button>
+      <button type="button" id="dung">Stop</button>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
